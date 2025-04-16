@@ -1,0 +1,83 @@
+.coffee-styles {
+    position: relative;
+    padding: 0 0 22px;
+    &__inner {
+        text-align: center;
+    }
+    &__title {
+        color: var(--color-coffee);
+    }
+    &__text {
+        margin: 16px 0 32px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 42px;
+        align-items: start;
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile-min {
+            grid-template-columns: 1fr;
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+    &__item {
+        background-color: var(--color-pale-orange);
+        text-align: center;
+        &-image-block {
+            position: relative;
+            overflow: hidden;
+            height: 222px;
+            background: var(--color-orange-42);
+            @include mobile-min {
+                height: 100%;
+            }
+        }
+        &-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        &-content {
+            padding: 14px 15px 0;
+        }
+        &_border {
+            border-right: 1px solid var(--color-orange-42);
+            border-bottom: 1px solid var(--color-orange-42);
+            border-left: 1px solid var(--color-orange-42);
+        }
+        &-title {
+            color: var(--color-coffee);
+            font-size: 22px;
+            @include flex-center(false);
+            @include mobile-min {
+                height: 100% !important;
+            }
+        }
+        &-text {
+            color: var(--color-black);
+            font-size: 16px;
+            margin: 6px 0;
+            @include mobile-min {
+                height: 100% !important;
+            }
+        }
+        &-price {
+            font-family: 'PlayfairDisplay-Bold';
+            color: var(--color-coffee);
+            font-size: 18px;
+        }
+        &-button {
+            position: relative;
+            margin-top: -6px;
+            top: 23px;
+        }
+    }
+}

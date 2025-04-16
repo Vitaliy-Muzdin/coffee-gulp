@@ -1,0 +1,16 @@
+.social-networks {
+    display: flex;
+    column-gap: 24px;
+    &__link {
+        transition-duration: var(--transition-duration);
+        @include hover {
+            .social-networks__icon {
+                filter: opacity(0.7);
+            }
+        }
+    }
+    &__icon {
+        transition-duration: var(--transition-duration);
+        height: 20px;
+    }
+}

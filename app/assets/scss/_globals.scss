@@ -1,0 +1,39 @@
+body {
+    @include fluid-text(20, 16);
+
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-grey);
+    background-color: var(--color-pale-white);
+    overflow-x: hidden;
+}
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    @include fluid-text(220, 120)
+}
+h2 {
+    @include fluid-text(54, 37)
+}
+h3 {
+    @include fluid-text(30, 25)
+}
+h4 {
+    @include fluid-text(22, 16)
+}
+h2, h3, h4 {
+    font-family: 'PlayfairDisplay-Bold';
+}

@@ -1,0 +1,16 @@
+.button {
+    @include flex-center(true);
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-button);
+    color: var(--color-black);
+    padding: 14px 26px;
+    border: 0;
+    font-size: 14px;
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+    font-family: 'PlayfairDisplay-Bold';
+    @include hover {
+        background-color: var(--background-hover);
+    }
+}

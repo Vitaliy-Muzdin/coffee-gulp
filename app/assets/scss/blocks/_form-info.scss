@@ -1,0 +1,16 @@
+.form-info {
+    &__error {
+        color: red;
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 21px;
+    }
+    &__ok {
+        color: var(--color-white);
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 21px;
+    }
+    &__info {
+        margin: 25px 0 0;
+        display: block;
+    }
+}

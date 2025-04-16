@@ -1,0 +1,43 @@
+.morning-coffee {
+    position: relative;
+    @include background-image('../../assets/images/morning-coffee/fon.jpg');
+    padding: 183px 0 95px;
+    @include mobile {
+        padding: 120px 0 50px;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__title-block {
+        color: var(--color-white);
+    }
+    &__title {
+        font-size: 22px;
+        font-family: 'PlayfairDisplay-Medium';
+        font-weight: normal;
+        @include mobile {
+            font-size: 16px;
+        }
+        &-coffee {
+            font-size: 220px;
+            font-family: 'ClickerScript-Regular';
+            @include mobile {
+                font-size: 120px;
+            }
+        }
+    }
+    &__text {
+        font-size: 20px;
+        color: var(--color-white);
+        width: 100%;
+        max-width: 530px;
+        line-height: 34px;
+        @include mobile {
+            font-size: 16px;
+            line-height: initial;
+        }
+    }
+    &__button {
+        margin-top: 20px;
+    }
+}

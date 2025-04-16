@@ -1,0 +1,38 @@
+@import 
+    'fonts', 
+    'media', 
+    'mixins', 
+    'normalize', 
+    'utils', 
+    'variables', 
+    'globals';
+    
+@import 
+    './blocks/logo', 
+    './blocks/button', 
+    './blocks/burger', 
+    './blocks/cross-button', 
+    './blocks/tablet-overlay', 
+    './blocks/subscribe-form', 
+    './blocks/form-info', 
+    './blocks/social-networks', 
+    './blocks/loading';
+    
+@import 
+    './sections/header', 
+    './sections/morning-coffee', 
+    './sections/best-coffee', 
+    './sections/coffee-styles', 
+    './sections/advantages', 
+    './sections/order', 
+    './sections/reviews', 
+    './sections/subscribe', 
+    './sections/footer';
+
+// @use 'fonts';
+// @use 'globals';
+// @use 'media';
+// @use 'mixins';
+// @use 'normalize';
+// @use 'utils';
+// @use 'variables';

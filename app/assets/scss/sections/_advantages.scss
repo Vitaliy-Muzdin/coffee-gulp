@@ -1,0 +1,101 @@
+.advantages {
+    position: relative;
+    @include padding-section(82, 40);
+    &::before {
+        content: "";
+        @include background-image('../../assets/images/effects/wave-coffee-right.png');
+        position: absolute;
+        width: 357px;
+        height: 175px;
+        right: 0;
+        top: 30px;
+    }
+    @include desktop {
+        &::before {
+            width: 300px;
+            height: 145px;
+            bottom: -35px;
+        }
+    }
+    @include tablet {
+        &::before {
+            width: 143px;
+            height: 70px;
+            bottom: -15px;
+        }
+    }
+    @include mobile {
+        &::before {
+            display: none;
+        }
+    }
+    &__inner {
+        text-align: center;
+    }
+    &__title {
+        position: relative;
+        z-index: 1;
+        color: var(--color-coffee);
+    }
+    &__text {
+        margin: 16px 0 32px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        align-items: start;
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile-min {
+            grid-template-columns: 1fr;
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+    &__item {
+        background-color: var(--color-pale-orange);
+        border: 1px solid var(--color-orange-42);
+        text-align: center;
+        padding: 36px 15px;
+        &-image {
+            height: 88px;
+            margin: 0 auto 25px;
+        }
+        &-title {
+            font-size: 28px;
+            color: var(--color-coffee);
+            @include flex-center(false);
+            @include mobile-min {
+                height: 100% !important;
+            }
+        }
+        &-text {
+            margin-top: 8px;
+            font-size: 20px;
+            @include mobile-min {
+                height: 100% !important;
+            }
+        }
+        &:first-child {
+            background-color: var(--color-light-orange);
+            border: 1px solid var(--color-light-orange);
+        }
+    }
+    &__text-bottom {
+        margin: 32px 0 24px;
+        &_bold {
+            color: var(--color-coffee);
+            font-family: 'PlayfairDisplay-Bold';
+            font-size: 30px;
+        }
+    }
+    &__button {
+        font-size: 16px;
+    }
+}

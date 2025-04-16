@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Тестовый сайт coffee</title>
+
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    </head>
+    <body class="page">
+        <header id="header" class="header">
+            <div class="header__inner container">
+                <div class="header__logo logo">
+                    <a href="index.html" class="logo__link">
+                        <img 
+                            class="logo__image" 
+                            src="assets/images/logo.svg" 
+                            alt="Bean Scene" 
+                            loading="lazy"
+                        />
+                    </a>
+                </div>
+                <nav class="header__menu hidden-tablet">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="index.html">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__authorization hidden-tablet">
+                    <button class="header__authorization-sign-in button" type="button">Sign In</button>
+                    <button class="header__authorization-sing-up button" type="button">Sing Up</button>
+                </div>
+                <button 
+                    class="header__burger burger visible-tablet" 
+                    type="button"
+                    onclick="tabletOverlay.showModal()"
+                >
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </div>
+        </header>
+
+        <dialog id="tabletOverlay" class="tablet-overlay visible-tablet">
+            <form class="tablet-overlay__close-background-wrapper" method="dialog">
+                <button class="tablet-overlay__close-background-button" type="submit">
+                    <span class="visually-hidden">Close the navigation menu by clicking on the dark block</span>
+                </button>
+            </form>
+            <div class="tablet-overlay__body">
+                <form class="tablet-overlay__close-button-wrapper" method="dialog">
+                    <div class="header__authorization">
+                        <button class="header__authorization-sign-in button" type="button">Sign In</button>
+                        <button class="header__authorization-sing-up button" type="button">Sing Up</button>
+                    </div>
+                    <button class="tablet-overlay__close-button cross-button" type="submit">
+                        <span class="cross-button__elem"></span>
+                        <span class="visually-hidden">Close navigation menu</span>
+                    </button>
+                </form>
+                <ul class="tablet-overlay__list">
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="home.html">Home</a>
+                    </li>
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+
+        <section class="morning-coffee">
+            <div class="morning-coffee__inner container">
+                <div class="morning-coffee__title-block">
+                    <h1 class="morning-coffee__title">
+                        We’ve got your morning covered with
+                        <div class="morning-coffee__title-coffee">Coffee</div>
+                    </h1>
+                </div>
+                <div class="morning-coffee__text">It is best to start your day with a cup of coffee. Discover the best flavours coffee you will ever have. We provide the best for our customers.</div>
+                <button class="morning-coffee__button button" type="button">Order Now</button>
+            </div>
+        </section>
+
+        <section class="best-coffee">
+            <div class="best-coffee__inner container">
+                <div class="best-coffee__content">
+                    <div class="best-coffee__item">
+                        <h2 class="best-coffee__title">Discover the best coffee</h2>
+                        <div class="best-coffee__text">Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and helps build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no doubt that you will enjoy this coffee more than others you have ever tasted.</div>
+                        <button class="best-coffee__button button" type="button">Learn More</button>
+                    </div>
+                    <div class="best-coffee__item">
+                        <img class="best-coffee__image" src="assets/images/best-coffee/mug-of-coffee.jpg" alt="Discover the best coffee" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coffee-styles">
+            <div class="coffee-styles__inner container">
+                <h2 class="coffee-styles__title">Enjoy a new blend of coffee style</h2>
+                <div class="coffee-styles__text">Explore all flavours of coffee with us. There is always a new cup worth experiencing</div>
+                <div class="coffee-styles__content">
+                    <div class="coffee-styles__item">
+                        <div class="coffee-styles__item-image-block">
+                            <img class="coffee-styles__item-image" src="assets/images/coffee-styles/cappuccino.jpg" alt="Cappuccino" loading="lazy"/>
+                        </div>
+                        <div class="coffee-styles__item-content coffee-styles__item_border">
+                            <h3 class="coffee-styles__item-title">Cappuccino</h3>
+                            <div class="coffee-styles__item-text">Coffee 50% | Milk 50%</div>
+                            <div class="coffee-styles__item-price">$8.50</div>
+                            <button class="coffee-styles__item-button button" type="button">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="coffee-styles__item">
+                        <div class="coffee-styles__item-image-block">
+                            <img class="coffee-styles__item-image" src="assets/images/coffee-styles/tea-latte.jpg" alt="Chai Latte" loading="lazy"/>
+                        </div>
+                        <div class="coffee-styles__item-content coffee-styles__item_border">
+                            <h3 class="coffee-styles__item-title">Chai Latte</h3>
+                            <div class="coffee-styles__item-text">Coffee 50% | Milk 50%</div>
+                            <div class="coffee-styles__item-price">$8.50</div>
+                            <button class="coffee-styles__item-button button" type="button">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="coffee-styles__item">
+                        <div class="coffee-styles__item-image-block">
+                            <img class="coffee-styles__item-image" src="assets/images/coffee-styles/macchiato.jpg" alt="Macchiato" loading="lazy"/>
+                        </div>
+                        <div class="coffee-styles__item-content coffee-styles__item_border">
+                            <h3 class="coffee-styles__item-title">Macchiato</h3>
+                            <div class="coffee-styles__item-text">Coffee 50% | Milk 50%</div>
+                            <div class="coffee-styles__item-price">$8.50</div>
+                            <button class="coffee-styles__item-button button" type="button">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="coffee-styles__item">
+                        <div class="coffee-styles__item-image-block">
+                            <img class="coffee-styles__item-image" src="assets/images/coffee-styles/espresso.jpg" alt="Expresso" loading="lazy"/>
+                        </div>
+                        <div class="coffee-styles__item-content coffee-styles__item_border">
+                            <h3 class="coffee-styles__item-title">Expresso</h3>
+                            <div class="coffee-styles__item-text">Coffee 50% | Milk 50%</div>
+                            <div class="coffee-styles__item-price">$8.50</div>
+                            <button class="coffee-styles__item-button button" type="button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__inner container">
+                <h2 class="advantages__title">Why are we different?</h2>
+                <div class="advantages__text">We don’t just make your coffee, we make your day!</div>
+                <div class="advantages__content">
+                    <div class="advantages__item">
+                        <img class="advantages__item-image" src="assets/images/advantages/supreme-beans.svg" alt="Supreme Beans" loading="lazy"/>
+                        <h3 class="advantages__item-title">Supreme Beans</h3>
+                        <div class="advantages__item-text">Beans that provides great taste</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-image" src="assets/images/advantages/high-quality.svg" alt="High Quality" loading="lazy"/>
+                        <h3 class="advantages__item-title">High Quality</h3>
+                        <div class="advantages__item-text">We provide the highest quality</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-image" src="assets/images/advantages/extraordinary.svg" alt="Extraordinary" loading="lazy"/>
+                        <h3 class="advantages__item-title">Extraordinary</h3>
+                        <div class="advantages__item-text">Coffee like you have never tasted</div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-image" src="assets/images/advantages/affordable-price.svg" alt="Affordable Price" loading="lazy"/>
+                        <h3 class="advantages__item-title">Affordable Price</h3>
+                        <div class="advantages__item-text">Our Coffee prices are easy to afford</div>
+                    </div>
+                </div>
+                <div class="advantages__text-bottom">
+                    <div>Great ideas start with great coffee, Lets help you achieve that</div>
+                    <div class="advantages__text-bottom_bold">Get started today.</div>
+                </div>
+                <button class="advantages__button button" type="button">Join Us</button>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="order__inner container">
+                <div class="order__content">
+                    <div class="order__item">
+                        <h2 class="order__title">Get a chance to have an Amazing morning</h2>
+                        <div class="order__text">We are giving you are one time opportunity to experience a better life with coffee.</div>
+                        <button class="order__button button" type="button">Order Now</button>
+                    </div>
+                    <div class="order__item">
+                        <img class="order__image" src="assets/images/order/cup.png" alt="cup" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__inner container">
+                <h2 class="reviews__title">Our coffee perfection feedback</h2>
+                <div class="reviews__text">Our customers has amazing things to say about us</div>
+                <div class="reviews__content">
+                    <button class="reviews__button reviews__button-left button">
+                        <img class="reviews__button-image" src="assets/images/reviews/left-arrow.svg" alt="left arrow" loading="lazy"/>
+                    </button>
+                    <button class="reviews__button reviews__button-right button">
+                        <img class="reviews__button-image" src="assets/images/reviews/right-arrow.svg" alt="right arrow" loading="lazy"/>
+                    </button>
+                    <a href="#" class="reviews__item reviews__item_active">
+                        <div class="reviews__item-quotes">“</div>
+                        <div class="reviews__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.....</div>
+                        <h3 class="reviews__item-name">Jonny Thomas</h3>
+                        <div class="reviews__item-speciality">Project Manager</div>
+                        <div class="reviews__item-photo-block">
+                            <img class="reviews__item-photo" src="assets/images/reviews/photo.jpg" alt="photo" loading="lazy"/>
+                        </div>
+                    </a>
+                    <a href="#" class="reviews__item">
+                        <div class="reviews__item-quotes">“</div>
+                        <div class="reviews__item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
+                        <h3 class="reviews__item-name">Jonny Thomas</h3>
+                        <div class="reviews__item-speciality">Project Manager</div>
+                        <div class="reviews__item-photo-block">
+                            <img class="reviews__item-photo" src="assets/images/reviews/photo2.jpg" alt="photo" loading="lazy"/>
+                        </div>
+                    </a>
+                    <a href="#" class="reviews__item">
+                        <div class="reviews__item-quotes">“</div>
+                        <div class="reviews__item-text">Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.</div>
+                        <h3 class="reviews__item-name">Jonny Thomas</h3>
+                        <div class="reviews__item-speciality">Project Manager</div>
+                        <div class="reviews__item-photo-block">
+                            <img class="reviews__item-photo" src="assets/images/reviews/photo3.jpg" alt="photo" loading="lazy"/>
+                        </div>
+                    </a>
+                    <a href="#" class="reviews__item">
+                        <div class="reviews__item-quotes">“</div>
+                        <div class="reviews__item-text">Откуда он появился? Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div>
+                        <h3 class="reviews__item-name">Jonny Thomas</h3>
+                        <div class="reviews__item-speciality">Project Manager</div>
+                        <div class="reviews__item-photo-block">
+                            <img class="reviews__item-photo" src="assets/images/reviews/photo4.jpg" alt="photo" loading="lazy"/>
+                        </div>
+                    </a>
+                    <a href="#" class="reviews__item">
+                        <div class="reviews__item-quotes">“</div>
+                        <div class="reviews__item-text">Где его взять? Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</div>
+                        <h3 class="reviews__item-name">Jonny Thomas</h3>
+                        <div class="reviews__item-speciality">Project Manager</div>
+                        <div class="reviews__item-photo-block">
+                            <img class="reviews__item-photo" src="assets/images/reviews/photo5.jpg" alt="photo" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe__inner container">
+                <h2 class="subscribe__title">Subscribe to get the Latest News</h2>
+                <div class="subscribe__text">Don’t miss out on our latest news, updates, tips and special offers</div>
+                <form id="form" class="subscribe__form subscribe-form">
+                    <input id="email" class="subscribe-form__input subscribe-form__email" type="email" name="email" size="25" required/>
+                    <label for="email" class="subscribe-form__text">Enter your mail</label>
+                    <input id="submit" class="subscribe-form__input subscribe-form__submit" value="Suscribe" type="submit"/>
+                </form>
+                <div class="subscribe__form-info form-info">
+                    <div class="form-info__error"></div>
+                    <div class="form-info__ok"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__logo logo">
+                            <a class="logo__link" href="index.html">
+                                <img 
+                                    class="footer__logo-image logo__image" 
+                                    src="assets/images/logo.svg" 
+                                    alt="Bean Scene" 
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                        <div class="footer__social-networks social-networks">
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/facebook.svg" alt="facebook" loading="lazy">
+                            </a>
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/instagram.svg" alt="instagram" loading="lazy">
+                            </a>
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/youtube.svg" alt="youtube" loading="lazy">
+                            </a>
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/twitter.svg" alt="twitter" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">About</h2>
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Features</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">News & Blogs</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Help & Supports</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Company</h2>
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">How we work</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Terms of service</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Pricing</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Contact Us</h2>
+                        <ul class="footer__info">
+                            <li class="footer__info-item">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</li>
+                            <li class="footer__info-item">
+                                <a class="footer__info-link" href="tel:+123456789">+1 202-918-2132</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a class="footer__info-link" href="mailto:test">beanscene@mail.com</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a class="footer__info-link" href="#">www.beanscene.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="loading" class="loading">
+            <span class="loading__elem"></span>
+        </div>
+
+        <script type="text/javascript" src="assets/js/script.min.js"></script>
+    </body>
+</html>

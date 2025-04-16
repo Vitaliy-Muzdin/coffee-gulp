@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Тестовый сайт coffee</title>
+
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    </head>
+    <body class="page">
+        <header id="header" class="header">
+            <div class="header__inner container">
+                <div class="header__logo logo">
+                    <a href="index.html" class="logo__link">
+                        <img 
+                            class="logo__image" 
+                            src="assets/images/logo.svg" 
+                            alt="Bean Scene" 
+                            loading="lazy"
+                        />
+                    </a>
+                </div>
+                <nav class="header__menu hidden-tablet">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="index.html">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__authorization hidden-tablet">
+                    <button class="header__authorization-sign-in button" type="button">Sign In</button>
+                    <button class="header__authorization-sing-up button" type="button">Sing Up</button>
+                </div>
+                <button 
+                    class="header__burger burger visible-tablet" 
+                    type="button"
+                    onclick="tabletOverlay.showModal()"
+                >
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </div>
+        </header>
+
+        <dialog id="tabletOverlay" class="tablet-overlay visible-tablet">
+            <form class="tablet-overlay__close-background-wrapper" method="dialog">
+                <button class="tablet-overlay__close-background-button" type="submit">
+                    <span class="visually-hidden">Close the navigation menu by clicking on the dark block</span>
+                </button>
+            </form>
+            <div class="tablet-overlay__body">
+                <form class="tablet-overlay__close-button-wrapper" method="dialog">
+                    <div class="header__authorization">
+                        <button class="header__authorization-sign-in button" type="button">Sign In</button>
+                        <button class="header__authorization-sing-up button" type="button">Sing Up</button>
+                    </div>
+                    <button class="tablet-overlay__close-button cross-button" type="submit">
+                        <span class="cross-button__elem"></span>
+                        <span class="visually-hidden">Close navigation menu</span>
+                    </button>
+                </form>
+                <ul class="tablet-overlay__list">
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="home.html">Home</a>
+                    </li>
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="tablet-overlay__item">
+                        <a class="tablet-overlay__link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+
+        <section class="morning-coffee">
+            <div class="morning-coffee__inner container">
+                <div class="morning-coffee__title-block">
+                    <h1 class="morning-coffee__title">
+                        We’ve got your morning covered with
+                        <div class="morning-coffee__title-coffee">About Us</div>
+                    </h1>
+                </div>
+                <div class="morning-coffee__text">It is best to start your day with a cup of coffee. Discover the best flavours coffee you will ever have. We provide the best for our customers.</div>
+                <button class="morning-coffee__button button" type="button">Order Now</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__logo logo">
+                            <a class="logo__link" href="index.html">
+                                <img 
+                                    class="footer__logo-image logo__image" 
+                                    src="assets/images/logo.svg" 
+                                    alt="Bean Scene" 
+                                    loading="lazy"
+                                />
+                            </a>
+                        </div>
+                        <div class="footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                        <div class="footer__social-networks social-networks">
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/facebook.svg" alt="facebook" loading="lazy">
+                            </a>
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/instagram.svg" alt="instagram" loading="lazy">
+                            </a>
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/youtube.svg" alt="youtube" loading="lazy">
+                            </a>
+                            <a class="social-networks__link" href="#" target="_blank">
+                                <img class="social-networks__icon" src="assets/images/social-networks/twitter.svg" alt="twitter" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">About</h2>
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Features</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">News & Blogs</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Help & Supports</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Company</h2>
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">How we work</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Terms of service</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Pricing</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Contact Us</h2>
+                        <ul class="footer__info">
+                            <li class="footer__info-item">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</li>
+                            <li class="footer__info-item">
+                                <a class="footer__info-link" href="tel:+123456789">+1 202-918-2132</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a class="footer__info-link" href="mailto:test">beanscene@mail.com</a>
+                            </li>
+                            <li class="footer__info-item">
+                                <a class="footer__info-link" href="#">www.beanscene.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="loading" class="loading">
+            <span class="loading__elem"></span>
+        </div>
+
+        <script type="text/javascript" src="assets/js/script.min.js"></script>
+    </body>
+</html>

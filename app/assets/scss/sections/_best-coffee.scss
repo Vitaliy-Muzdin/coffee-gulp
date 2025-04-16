@@ -1,0 +1,72 @@
+.best-coffee {
+    position: relative;
+    @include padding-section(82, 40);
+    &__content {
+        display: grid;
+        grid-template-columns: auto 500px;
+        align-items: center;
+        @include desktop {
+            grid-template-columns: auto 400px;
+        }
+        @include tablet {
+            grid-template-columns: auto 300px;
+        }
+        @include mobile {
+            grid-template-columns: auto;
+        }
+    }
+    &__item:first-child {
+        padding-right: 95px;
+        &::after {
+            content: '';
+            @include background-image('../../assets/images/effects/wave-coffee-left.png');
+            position: absolute;
+            width: 370px;
+            height: 181px;
+            left: 0;
+            bottom: -7px;
+        }
+        @include desktop {
+            padding-right: 30px;
+            &::after {
+                width: 300px;
+                height: 145px;
+                bottom: -35px;
+            }
+        }
+        @include tablet {
+            padding-right: 15px;
+            &::after {
+                width: 143px;
+                height: 70px;
+                bottom: -15px;
+            }
+        }
+        @include mobile {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__title {
+        color: var(--color-coffee);
+    }
+    &__text {
+        padding: 30px 0;
+        line-height: 34px;
+        @include tablet {
+            line-height: initial;
+        }
+    }
+    &__button {
+        padding: 14px 23px;
+    }
+    &__image {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        @include mobile {
+            max-width: 350px;
+        }
+    }
+}

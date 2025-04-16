@@ -1,0 +1,40 @@
+.subscribe {
+    position: relative;
+    @include padding-section(80, 40);
+    @include background-image('../../assets/images/subscribe/fon.jpg');
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        transform: translate(0, 35%);
+        height: 317px;
+        width: 263px;
+        @include mobile {
+            display: none;
+        }
+    }
+    &::before {
+        @include background-image('../../assets/images/effects/cup-coffee-left.png');
+        left: 0;
+    }
+    &::after {
+        @include background-image('../../assets/images/effects/cup-coffee-right.png');
+        right: 0;
+    }
+    &__inner {
+        text-align: center;
+    }
+    &__title {
+        color: var(--color-white);
+    }
+    &__text {
+        color: var(--color-white);
+        font-size: 20px;
+        line-height: 34px;
+        margin: 16px 0 26px;
+    }
+    &__form-info {
+        position: relative;
+    }
+}

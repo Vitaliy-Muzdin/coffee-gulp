@@ -1,0 +1,45 @@
+:root {
+    --color-coffee: #603809;
+    --color-coffee-25: rgba(96, 55, 9, 0.25);
+    --color-coffee-50: rgba(96, 55, 9, 0.5);
+    --color-coffee-75: rgba(96, 55, 9, 0.75);
+    --color-white: #FFFFFF;
+    --color-white-05: rgba(255, 255, 255, .5);
+    --color-white-0: rgba(255, 255, 255, 0);
+    --color-pale-white: #FFFEFC;
+    --color-black: #1E1E1E;
+    --color-black-75: rgba(30, 30, 30, 0.75);
+    --color-black-34: rgba(0, 0, 0, 0.34);
+    --color-orange: #F9C06A;
+    --color-orange-42: rgba(249, 192, 106, .42);
+    --color-orange-hover: #f1aa5a;
+    --color-orange-22: rgba(249, 192, 106, 0.22);
+    --color-orange-0: rgba(249, 192, 106, 0);
+    --color-grey: #707070;
+    --color-pale-orange: #FFF9F1;
+    --color-brown: #442808;
+    --color-light-orange: #FFEED8;
+    
+    --background: var(--color-orange);
+    --background-hover: var(--color-orange-hover);
+
+    --box-shadow: 0px 6px 12px var(--color-orange-22);
+
+    --border-radius-button: 24px;
+    --border-radius-arrow: 16px;
+    --border-radius-email: 4px;
+    --border-radius-small: 5px;
+    --border-radius-average: 15px;
+    --border-radius-big: 25px;
+    
+    --font-family-base: 'PlayfairDisplay-Regular';
+    
+    --container-width: 1200px;
+    --container-padding-x: 10px;
+
+    --section-padding-y: 82px 0;
+    --section-padding-y-top: 82px 0 0;
+    --section-padding-y-bottom: 0 0 82px;
+
+    --transition-duration: .5s;
+}

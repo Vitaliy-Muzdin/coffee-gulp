@@ -1,0 +1,180 @@
+.reviews {
+    position: relative;
+    @include padding-section(82, 40);
+    &__inner {
+        text-align: center;
+        padding: 0 10px 56px;
+        @include tablet {
+            padding: 0 30px 56px;
+        }
+        @include mobile-min {
+            padding: 0 20px 56px;
+        }
+    }
+    &__title {
+        color: var(--color-coffee);
+    }
+    &__text {
+        margin: 16px 0 45px;
+    }
+    &__content {
+        position: relative;
+    }
+    &__button {
+        position: absolute;
+        border-radius: 16px;
+        padding: 33px;
+        top: 50%;
+        z-index: 1;
+        cursor: pointer;
+        @include tablet {
+            padding: 25px;
+        }
+        @include mobile-min {
+            padding: 15px;
+        }
+        &-left {
+            left: 59px;
+            transform: translateY(-50%);
+            @include desktop {
+                left: 0;
+            }
+            @include tablet {
+                left: -25px;
+            }
+            @include mobile-min {
+                left: 0;
+                top: 100%;
+                transform: translateY(10px);
+            }
+        }
+        &-right {
+            right: 59px;
+            transform: translateY(-50%);
+            @include desktop {
+                right: 0;
+            }
+            @include tablet {
+                right: -25px;
+            }
+            @include mobile-min {
+                right: 0;
+                top: 100%;
+                transform: translateY(10px);
+            }
+        }
+        &-image {
+            width: 16px;
+        }
+    }
+    &__item {
+        position: absolute;
+        border: 1px solid var(--color-orange-42);
+        background-color: var(--color-pale-orange);
+        transition-duration: var(--transition-duration);
+        padding: 130px 100px 0;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        max-width: 980px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        visibility: hidden;
+        opacity: 0;        
+        @include mobile {
+            padding: 120px 50px 0;
+        }
+        @include mobile-min {
+            padding: 75px 15px 0;
+        }
+        &_active {
+            visibility: visible;
+            opacity: 1;
+        }
+        &-quotes {
+            position: absolute;
+            font-family: "PlayfairDisplay-Bold";
+            font-size: 220px;
+            color: var(--color-coffee);
+            top: -37px;
+            left: 29px;
+            @include mobile-min {
+                font-size: 160px;
+            }
+        }
+        &-text {
+            font-family: "PlayfairDisplay-SemiBold";
+            font-size: 18px;
+            line-height: 36px;
+            @include mobile-min {
+                font-size: 16px;
+                line-height: initial;
+            }
+        }
+        &-name {
+            font-family: "PlayfairDisplay-Bold";
+            font-size: 32px;
+            color: var(--color-coffee);
+            margin: 28px 0 4px;
+        }
+        &-speciality {
+            font-size: 20px;
+            line-height: 34px;
+        }
+        &-photo-block {
+            width: 112px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 16px;
+            margin: 45px auto -56px;
+            box-shadow: var(--box-shadow);
+        }
+        &-photo {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        z-index: 1;
+    }
+    &::before {
+        @include background-image('../../assets/images/effects/big-wave-coffee-right.png');
+        @include margin-section(82, 0);
+        width: 430px;
+        height: 223px;
+        right: 0;
+        top: 70px;
+        @include desktop {
+            top: 50px;
+        }
+        @include tablet {
+            width: 300px;
+            height: 187px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &::after {
+        @include background-image('../../assets/images/effects/big-wave-coffee-left.png');
+        @include margin-section(0, 82);
+        width: 374px;
+        height: 199px;
+        left: 0;
+        bottom: 21px;
+        @include desktop {
+            bottom: 11px;
+        }
+        @include tablet {
+            width: 250px;
+            height: 140px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+}
